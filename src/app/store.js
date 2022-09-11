@@ -11,7 +11,9 @@ const homeConfig = {
 };
 const reducers = combineReducers({
    user : userSlice
+   // add : change
 });
+
 const persistedReducer = persistReducer(homeConfig, reducers);
 export const store = configureStore({
   reducer: persistedReducer,
